@@ -34,13 +34,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    A responsive website will maintain the location of its information as it is sized down. The overall layout of a responsive website should generally stay the same, minus maybe certain photos being removed so that the general information stays the same.
+
+    An adaptive website had specific widths or heights that trigger it to change its overall design. As it hits a certain media query, the website will adjust and hold the same general information, but in a different format. An example would be if a website had three boxes with information in them, as you change the device you are using, it would go to having two boxes of different size with that information, along with a third box below those two of an even different size. Then when you get down to the mobile version, it could change to having just one box per width of the screen.
+
+    The big difference between the two different methods is that adaptive screen size is a lot less flexible than responsive screen design. Adaptive needs you to design for each screen size individually, which is pretty hard when you dont have access to bigger screens.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile First: This is a very focused approach that begins with designing for the main function of the site, then aims for higher resolutions (often called progressive enhancement).
+
+    desktop first: This approach means designing for the highest specifications — the best achievable by design- and then going down to smaller resolutions (often called graceful degradation).  
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    It sets all values on the page to 10pixels, which makes for ease when adjusting fonts in rem units, as rem accounts for the ratio of size with respect to the root element, which when set to 'font-size: 62.5%', makes the html tag the root element. example: 2rem would be 20pixels.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Its a way of organizing your code so that everything is neat, instead of constantly repeating lines of code. It allows for an inception type of effect, where a parent element can have children and grandchildren elements inside of it, and uses a preprocessor to read the code as is and translate it to vanilla css.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite concept is parametric mixins. This makes coding even more simple. There are many times where certain features are repeated, such as flexbox, and button creating, and having a parametric mixin makes the amount of lines of code much lower.
+
+    Escaping is a concept that I find somewhat confusing still, mainly due to its strict written guidelines. I don’t truly understand why you must type a ~’(max-width: 500px)’ as it is very specific and somewhat frustrating when you don't have it exact.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -118,7 +137,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [x] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
