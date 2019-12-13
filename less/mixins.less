@@ -1,1 +1,25 @@
 // Mixins Here
+
+.display-flex(@direction, @justify, @align){
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items:@align;
+}
+
+.navbarstyle(){
+    text-decoration: none;
+    font-size:1.6rem;
+    color:black;
+}
+
+.custom-button(@btn-color:yellow, @width:100px, @height:30px, @font-color:black){
+    display:block;
+    background-color:@btn-color;
+    cursor:pointer;
+    width:@width;
+    height:@height;
+    font-size:2rem;
+    border-radius:5px;
+    color:@font-color;
+}
